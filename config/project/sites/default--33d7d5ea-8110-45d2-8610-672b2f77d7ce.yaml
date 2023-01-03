@@ -4,5 +4,5 @@ hasUrls: true
 language: en-US
 name: 'Craft DDEV Vite'
 primary: true
-siteGroup: 72d809e2-3e53-4b0d-ab4c-cce59ddf8a64
+siteGroup: 72d809e2-3e53-4b0d-ab4c-cce59ddf8a64 # Craft DDEV Vite
 sortOrder: 1

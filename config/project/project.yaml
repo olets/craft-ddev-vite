@@ -1,13 +1,18 @@
-dateModified: 1672785342
+dateModified: 1672785622
 email:
   fromEmail: olets@olets.dev
   fromName: 'Craft DDEV Vite'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    33d7d5ea-8110-45d2-8610-672b2f77d7ce: 'Craft DDEV Vite'
-    64ddc447-6181-4762-839a-165aad84f909: Common
-    72d809e2-3e53-4b0d-ab4c-cce59ddf8a64: 'Craft DDEV Vite'
+    33d7d5ea-8110-45d2-8610-672b2f77d7ce: 'Craft DDEV Vite' # Craft DDEV Vite
+    64ddc447-6181-4762-839a-165aad84f909: Common # Common
+    72d809e2-3e53-4b0d-ab4c-cce59ddf8a64: 'Craft DDEV Vite' # Craft DDEV Vite
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
