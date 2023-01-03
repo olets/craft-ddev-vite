@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "esbuild": "^0.16.13",
     "vite": "^4.0.4",
     "vite-plugin-restart": "^0.3.0"
   }
