@@ -1,0 +1,22 @@
+dateModified: 1672785342
+email:
+  fromEmail: olets@olets.dev
+  fromName: 'Craft DDEV Vite'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    33d7d5ea-8110-45d2-8610-672b2f77d7ce: 'Craft DDEV Vite'
+    64ddc447-6181-4762-839a-165aad84f909: Common
+    72d809e2-3e53-4b0d-ab4c-cce59ddf8a64: 'Craft DDEV Vite'
+system:
+  edition: solo
+  live: true
+  name: 'Craft DDEV Vite'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
