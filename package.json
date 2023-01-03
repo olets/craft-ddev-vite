@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "vite": "^4.0.4",
+    "vite-plugin-restart": "^0.3.0"
+  }
 }
