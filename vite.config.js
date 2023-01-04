@@ -1,4 +1,5 @@
 import ViteRestart from 'vite-plugin-restart';
+import StimulusHMR from 'vite-plugin-stimulus-hmr';
 
 export default ({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
@@ -17,6 +18,7 @@ export default ({ command }) => ({
         './templates/**/*',
       ],
     }),
+    StimulusHMR(),
   ],
   publicDir: 'src/public',
   server: {
