@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // name: "url('/dist/images/file.ext')",
+        'black-square': "url('/dist/public/images/black-square.svg')",
       },
     },
   },

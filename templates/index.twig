@@ -11,6 +11,30 @@
 
 <body class="flex flex-col gap-4 h-screen items-center justify-center" data-controller="hello">
     Hello world
+
+    <div class="divide-y">
+        {{ tag('img', {
+            alt: "Black square",
+            class: "w-10",
+            src: craft.vite.asset("/images/black-square.svg", true),
+        }) }}
+
+        {{ tag('img', {
+            alt: "Black square",
+            class: "w-10",
+            src: "/dist/public/images/black-square.svg",
+        }) }}
+
+        {{ svg('@webroot/dist/public/images/black-square.svg') }}
+
+        {{ tag('div', {
+            class: 'bg-black-square h-10 w-10',
+            html: tag('span', {
+                class: 'sr-only',
+                html: 'Black square',
+            }),
+        }) }}
+    </div>
 </body>
 </html>
 
