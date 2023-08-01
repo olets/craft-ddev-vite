@@ -22,7 +22,7 @@ hooks:
   post-start:
     - exec: composer install
     - exec: npm install
-    - exec: npm run dev
+    - exec: npm run build && npm run dev
 
 # Key features of ddev's config.yaml:
 
