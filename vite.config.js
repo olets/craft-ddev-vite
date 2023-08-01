@@ -12,6 +12,7 @@ export default ({ command }) => ({
       },
     },
   },
+  logLevel: 'warn',
   plugins: [
     ViteRestart({
       reload: [

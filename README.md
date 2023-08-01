@@ -9,7 +9,7 @@ Install DDEV: https://ddev.readthedocs.io/en/latest/users/install/ddev-installat
 ## Development
 
 1. Start DDEV, install Composer and npm dependencies, and start Vite: `ddev start`
-1. After adding new asset files to `src/public`, restart Vite: <kbd>Ctrl</kbd><kbd>c</kbd> then `ddev npm run dev`
+1. After adding new asset files to `src/public`, build Vite: in a separate terminal from where Vite is running, `ddev npm run build`
 1. When done, stop DDEV: either `ddev stop` to stop this project, or `ddev poweroff` to shut down DDEV entirely.
 
 ## Building
