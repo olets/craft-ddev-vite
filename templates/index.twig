@@ -25,7 +25,18 @@
             src: "/dist/images/black-square.svg",
         }) }}
 
-        {{ svg('@webroot/dist/images/black-square.svg') }}
+        {% set svgLabelId = "svg-label-#{random()}" %}
+
+        {{ tag('label', {
+            class: "sr-only",
+            id: svgLabelId,
+            text: "Black square",
+        }) }}
+
+        {{ svg('@webroot/dist/images/black-square.svg')|attr({
+            aria: { labelledby: svgLabelId },
+            class: "h-10 w-10",
+        }) }}
 
         {{ tag('div', {
             class: 'bg-black-square h-10 w-10',
