@@ -12,40 +12,40 @@
 <body class="flex flex-col gap-4 h-screen items-center justify-center" data-controller="hello">
     Hello world
 
-    <div class="divide-y">
-        {{ tag('img', {
+    {% set svgLabelId = "svg-label-#{random()}" %}
+
+    {{ tag('label', {
+        class: "sr-only",
+        id: svgLabelId,
+        text: "Black square",
+    }) }}
+
+    {{ ol([
+        tag('img', {
             alt: "Black square",
             class: "w-10",
             src: craft.vite.asset("/images/black-square.svg", true),
-        }) }}
-
-        {{ tag('img', {
+        }),
+        tag('img', {
             alt: "Black square",
             class: "w-10",
             src: "/dist/images/black-square.svg",
-        }) }}
-
-        {% set svgLabelId = "svg-label-#{random()}" %}
-
-        {{ tag('label', {
-            class: "sr-only",
-            id: svgLabelId,
-            text: "Black square",
-        }) }}
-
-        {{ svg('@webroot/dist/images/black-square.svg')|attr({
+        }),
+        svg('@webroot/dist/images/black-square.svg')|attr({
             aria: { labelledby: svgLabelId },
             class: "h-10 w-10",
-        }) }}
-
-        {{ tag('div', {
+        }),
+        tag('div', {
             class: 'bg-black-square h-10 w-10',
             html: tag('span', {
                 class: 'sr-only',
                 html: 'Black square',
             }),
-        }) }}
-    </div>
+        })
+    ], {
+        class: "list-decimal space-y-4",
+        encode: false,
+    }) }}
 </body>
 </html>
 
